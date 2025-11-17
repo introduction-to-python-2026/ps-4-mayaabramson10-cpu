@@ -2,7 +2,7 @@ def split_at_first_digit(formula):
     n = []
     n_num = 0
     for i in range(len(formula)):
-        if formula[i].isdigit() == true:
+        if formula[i].isdigit() == True:
             n.append(i)
             n_num =+1
     w = ""
@@ -17,7 +17,7 @@ def split_before_each_uppercases(formula):
     y = []
     y_num = 0
     for i in range(len(formula)):
-        if formula[i].isupper() == true:
+        if formula[i].isupper() == True:
             y.append(i)
             y_num =+1
     g = ""
