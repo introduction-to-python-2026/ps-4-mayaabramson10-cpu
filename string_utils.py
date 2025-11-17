@@ -1,4 +1,3 @@
-
 def split_at_first_digit(formula):
     n = []
     n_num = 0
@@ -28,3 +27,4 @@ def split_before_each_uppercases(formula):
         g = g+1
     
  
+
