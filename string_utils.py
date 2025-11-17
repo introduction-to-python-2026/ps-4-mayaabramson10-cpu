@@ -1,15 +1,17 @@
 
 def split_at_first_digit(formula):
-    n = -1
+    n = []
+    n_num = 0
     for i in range(len(formula)):
         if formula[i].isdigit() == true:
-            n = i
-            break
-    if n == -1:
+            n.append(i)
+            n_num =+1
+    w = 0
+    if n_num == 0:
         return (formula, 1)
-    m =formula(:n)
-    l =formula(n:)
-    return (m, l)
+    for i in range(len(n)):
+        print formula[w:i]
+        w =+1
 
 def split_before_each_uppercases(formula):
     y = []
