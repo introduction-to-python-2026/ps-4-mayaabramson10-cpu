@@ -10,6 +10,7 @@ def split_at_first_digit(formula):
         return (formula, 1)
     for i in range(n.lenght):
         w = w + (formula[w:i])
+    print(w)
         
 
 def split_before_each_uppercases(formula):
@@ -24,6 +25,7 @@ def split_before_each_uppercases(formula):
         return formula
     for i in range(y.lenght):
         g = g + (formula[g:i])
+    print (g)
         
     
  
