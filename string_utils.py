@@ -3,9 +3,16 @@ def split_at_first_digit(formula):
   for i in range(len(formula)):
     if formula[i].isdigit() == True:
       digit_place.append(i)
-  if digit_place == 0:
-    print(formula, 1)
-  print(formula[:digit_place[0], formula[digit_place[0]:])
+  result = []
+  if len(digit_place) == 0:
+    result.append(formula)
+    result.append(1)
+    print(result)
+  else:
+    result.append(formula[:digit_place[0]])
+    result.append(formula[digit_place[0]:)
+    print (result)
+    
 
 def split_before_each_uppercases(formula):
     upper_place = []
