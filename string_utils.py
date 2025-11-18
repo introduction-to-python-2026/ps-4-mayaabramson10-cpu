@@ -5,23 +5,24 @@ def split_at_first_digit(formula):
     if formula[index].isdigit()== True:
       digit_place.append(index)
       digit_num =+1
-  
+  resoult = []
   if digit_num != 0:
-      resoult = []
+      
       for place in range(len(digit_place)):
         if place + 1 < len(digit_place):
           resoult.append(formula[digit_place[place]:digit_place[place + 1]])
         else:
           resoult.append(formula[digit_place[place]:])
-      print (resoult)
+      
   else:
-    print (formula ,", ", 1) 
-
+    resoult.append(formula , 1)
+    
+  print (resoult)
   
 
 
 def split_before_each_uppercases(formula):
-    upper_place = [0]
+    upper_place = []
     upper_num = 0
     for i in range(len(formula)):
         if formula[i].isupper() == True:
@@ -35,10 +36,11 @@ def split_before_each_uppercases(formula):
           k.append(formula[upper_place[g]:upper_place[g + 1]])
         else:
           k.append(formula[upper_place[g]:])
-      print(k)
+      
     else:
-      print(formula)
-
+      k.append(formula)
+      
+    print(k)
     
     
  
