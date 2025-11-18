@@ -7,12 +7,12 @@ def split_at_first_digit(formula):
       digit_num =+1
   
   if digit_num != 0:
-      resoult = ""
+      resoult = []
       for place in range(len(digit_place)):
         if place + 1 < len(digit_place):
-          resoult = resoult + ", " + (formula[digit_place[place]:digit_place[place + 1]])
+          resoult = resoult.append(formula[digit_place[place]:digit_place[place + 1]])
         else:
-          resoult = resoult + ", " + (formula[digit_place[place]:])
+          resoult = resoult.append(formula[digit_place[place]:])
       print (resoult)
   else:
     print (formula ,", ", 1) 
@@ -29,12 +29,12 @@ def split_before_each_uppercases(formula):
             upper_num =+1
     
     if upper_num != 0:
-      k = ""
+      k = []
       for g in range(len(upper_place)):
         if g+1 < len(upper_place):
-          k = k + ", " + (formula[upper_place[g]:upper_place[g + 1]])
+          k = k.append(formula[upper_place[g]:upper_place[g + 1]])
         else:
-          k = k + ", " + (formula[upper_place[g]:])
+          k = k.append(formula[upper_place[g]:])
       print(k)
     else:
       print(formula)
