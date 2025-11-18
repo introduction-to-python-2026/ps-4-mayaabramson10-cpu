@@ -5,7 +5,7 @@ def split_at_first_digit(formula):
       digit_place.append(i)
   if digit_place == 0:
     print(formula, 1)
-  print(formula[:digit_place[0],formula[digit_place[0]:])
+  print(formula[:digit_place[0], formula[digit_place[0]:])
 
 def split_before_each_uppercases(formula):
     upper_place = []
