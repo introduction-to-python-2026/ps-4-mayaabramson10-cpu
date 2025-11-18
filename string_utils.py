@@ -4,21 +4,14 @@ def split_at_first_digit(formula):
   for index in range(len(formula)):
     if formula[index].isdigit()== True:
       digit_place.append(index)
-      digit_num =+1
+      digit_num += 1
   resoult = []
   if digit_num != 0:
-      
-      for place in range(len(digit_place)):
-        if place + 1 < len(digit_place):
-          resoult.append(formula[digit_place[place]:digit_place[place + 1]])
-        else:
-          resoult.append(formula[digit_place[place]:])
-      
+    resoult.append(formula[:digit_place[1]])
   else:
-    resoult.append(formula , 1)
-    
+    resoult.append(formula, 1)
   print (resoult)
-  
+      
 
 
 def split_before_each_uppercases(formula):
@@ -27,7 +20,7 @@ def split_before_each_uppercases(formula):
     for i in range(len(formula)):
         if formula[i].isupper() == True:
             upper_place.append(i)
-            upper_num =+1
+            upper_num += 1
     
     if upper_num != 0:
       k = []
