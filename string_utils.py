@@ -7,11 +7,11 @@ def split_at_first_digit(formula):
   if len(digit_place) == 0:
     result.append(formula)
     result.append(1)
-    print(result)
+    return (result)
   else:
     result.append(formula[:digit_place[0]])
     result.append(formula[digit_place[0]:)
-    print (result)
+    return (result)
     
 
 def split_before_each_uppercases(formula):
@@ -33,7 +33,7 @@ def split_before_each_uppercases(formula):
     else:
       k.append(formula)
       
-    print(k)
+    return(k)
     
     
  
