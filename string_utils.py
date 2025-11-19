@@ -10,7 +10,7 @@ def split_at_first_digit(formula):
     return (result)
   else:
     result.append(formula[:digit_place[0]])
-    result.append(formula[digit_place[0]:)
+    result.append(formula[digit_place[0]:])
     return (result)
     
 
