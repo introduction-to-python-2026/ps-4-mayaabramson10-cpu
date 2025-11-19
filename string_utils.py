@@ -7,16 +7,14 @@ def split_at_first_digit(formula):
 
 def split_before_each_uppercases(formula):
   
-    start = 0
-    list = []
-    for i in range(1, len(formula)):
-      
-      if formula[i].isupper():
-         
-        list.append(formula[start:i])
-        start = i
-    list.append(formula[start:])
-    return list
+  start = 0
+  list = []
+   for i in range(1, len(formula)):
+     if formula[i].isupper():
+       list.append(formula[start:i])
+       start = i
+   list.append(formula[start:])
+   return list
                 
       
    
