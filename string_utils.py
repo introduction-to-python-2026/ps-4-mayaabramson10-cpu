@@ -15,21 +15,16 @@ def split_at_digit(formula):
     
     return (prefix, number)
 
-
 def split_before_each_uppercase(formula):
     segments = []
     current_segment_start_index = 0
     
-    if not formula:
-        return []
-
     for i in range(1, len(formula)):
         char = formula[i]
         
         if char.isupper():
             segment = formula[current_segment_start_index:i]
             segments.append(segment)
-            
             current_segment_start_index = i
             
     last_segment = formula[current_segment_start_index:]
