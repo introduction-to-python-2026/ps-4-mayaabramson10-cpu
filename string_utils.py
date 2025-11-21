@@ -1,6 +1,5 @@
 def split_at_digit(formula):
     first_digit_index = -1
-    
     for i, char in enumerate(formula):
         if char.isdigit():
             first_digit_index = i
@@ -20,14 +19,10 @@ def split_before_each_uppercase(formula):
     current_segment_start_index = 0
     
     for i in range(1, len(formula)):
-        char = formula[i]
-        
-        if char.isupper():
-            segment = formula[current_segment_start_index:i]
-            segments.append(segment)
+        if formula[i].isupper():
+            segments.append(formula[current_segment_start_index:i])
             current_segment_start_index = i
             
-    last_segment = formula[current_segment_start_index:]
-    segments.append(last_segment)
+    segments.append(formula[current_segment_start_index:])
     
     return segments
