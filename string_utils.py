@@ -11,7 +11,7 @@ def split_at_first_digit(formula):
     
     return (prefix, number)
 
-def split_before_each_uppercases(formula):
+def Split_before_each_uppercases(formula):
     segments = []
     start = 0
     
