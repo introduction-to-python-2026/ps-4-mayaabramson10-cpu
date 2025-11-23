@@ -1,4 +1,4 @@
-def Split_at_first_digit(formula):
+def split_at_first_digit(formula):
     i = 0
     while i < len(formula) and not formula[i].isdigit():
       i += 1
@@ -11,7 +11,7 @@ def Split_at_first_digit(formula):
     
     return (prefix, number)
 
-def Split_before_each_uppercases(formula):
+def split_before_each_uppercases(formula):
     segments = []
     start = 0
     
