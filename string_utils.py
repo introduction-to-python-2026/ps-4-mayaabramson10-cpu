@@ -12,16 +12,20 @@ def split_at_first_digit(formula):
     return (prefix, number)
 
 def split_before_each_uppercases(formula):
+   
+    if not formula:
+        return []
+
     segments = []
     start = 0
     
+    
     for i in range(1, len(formula)):
-      if formula[i].isupper():
-        segments.append(formula[start:i])
-        start = i
+        if formula[i].isupper():
+            segments.append(formula[start:i])
+            start = i
             
+  
     segments.append(formula[start:])
     
     return segments
-
-
